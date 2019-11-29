@@ -277,7 +277,11 @@ div.welcome {
   div.welcome p {
     font-size: 14px;
     color: #6d6d6d;
-    word-spacing: 0.1px; }
+    word-spacing: 0.1px;
+    text-align: center; }
+    @media screen and (min-width: 992px) {
+      div.welcome p {
+        text-align: left; } }
   div.welcome .bold {
     font-size: 13px; }
   div.welcome form {
