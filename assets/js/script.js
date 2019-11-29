@@ -4,7 +4,8 @@ const phoneRegEx = /^\+?(?=.*?[1-9])[0-9()-]{1,13}$/;
 const emailRegEx = /^(.+)@(.+){2,}\.(.+){2,}$/;
 
 window.onload = function() {
-  const countDownDate = new Date("Dec 31, 2019 23:59:59").getTime();
+  const year = new Date().getFullYear();
+  const countDownDate = new Date(`Dec 31, ${year} 23:59:59`).getTime();
   let showButtons = []
 
   document.querySelector("#signup-top-form").addEventListener("submit", function(e){
@@ -14,7 +15,6 @@ window.onload = function() {
      isValid *= validate('top-name');
      isValid *= validate('top-email');
      isValid *= validate('top-phone');
-    //  isValid *= validate('top-username');
 
      if (isValid) {
       /*success*/
