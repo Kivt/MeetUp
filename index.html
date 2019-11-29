@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>MeetUp</title>
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/animate.css" />
+  </head>
+
+  <body>
+    <div class="head">
+      <div class="container h-100">
+        <nav class="navbar navbar-expand-lg px-0">
+          <div class="navbar-brand">
+            <img class="img-fluid logo" src="/assets/img/logo.png">
+          </div>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="line"></div>
+            <div class="line"></div>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item animated fadeInLeft">
+                <a class="nav-link" href="#">Event details</a>
+              </li>
+
+              <li class="nav-item animated fadeInLeft">
+                <a class="nav-link" href="#">Speakers</a>
+              </li>
+
+              <li class="nav-item animated fadeInLeft">
+                <a class="nav-link" href="#">Sponsors</a>
+              </li>
+
+              <li class="nav-item animated fadeInLeft">
+                <a class="nav-link" href="#">past events</a>
+              </li>
+
+              <li class="nav-item animated fadeInLeft">
+                <a class="nav-link" href="#">contacts</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="timer">
+          <div class="numbers" id="numbers">
+            <div>
+              <div id="days">--</div>
+              <div class="text">d<span class="sm-hide">ays</span></div>
+            </div>
+            :
+            <div>
+              <div id="hours">--</div>
+              <div class="text">H<span class="sm-hide">ours</span></div>
+            </div>
+            :
+            <div>
+              <div id="minutes">--</div>
+              <div class="text">m<span class="sm-hide">inutes</span></div>
+            </div>
+            :
+            <div>
+              <div id="seconds">--</div>
+              <div class="text">s<span class="sm-hide">econds</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="images sm-hide">
+          <img src="/assets/img/icon5.png" class="img-fluid">
+          <img src="/assets/img/icon4.png" class="img-fluid">
+          <img src="/assets/img/icon3.png" class="img-fluid">
+          <img src="/assets/img/icon2.png" class="img-fluid">
+          <img src="/assets/img/icon1.png" class="img-fluid">
+        </div>
+      </div>
+    </div>
+
+    <div class="welcome container">
+      <div class="row">
+        <div class="col-sm-12 col-lg-6">
+          <h1 class="pl-0">Welcome!</h1>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id sequi quia distinctio accusantium vel...
+          </p>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, odio pariatur cumque, maiores, facere reprehenderit temporibus consequatur perferendis tempore repellat expedita ipsum et ratione! Doloribus rerum eligendi nesciunt. Voluptatibus, ut.
+          </p>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, cumque eaque asperiores error minima unde. Eum sit, eligendi consequatur sunt adipisci omnis explicabo deserunt non, provident similique molestias eius veniam.
+          </p>
+        </div>
+
+        <div class="col-sm-12 col-lg-5 offset-lg-1">
+          <form id="signup-top-form" novalidate="novalidate">
+            <h1>Sign up for our event</h1>
+
+            <input class="input" type="text" name="name" id="top-name" placeholder="Enter your name" />
+
+            <input class="input" type="email" name="email" id="top-email" placeholder="Enter your email" />
+
+            <input class="input" type="text" name="phone" id="top-phone" placeholder="Phone number" />
+
+            <button class="btn">Let me in!</button>
+
+            Hurry up, Limited seats availble <br />*we will never spam your email
+          </form>
+        </div>
+      </div>
+
+      <div class="row big-icons">
+        <div class="col-12 col-md-4">
+          <img src="/assets/img/icon5.png" class="img-fluid">
+
+          <h2 class="title">
+            Community
+          </h2>
+
+          <p>
+            Meet the Community you’ve always talked with, in real life! This meetup will be all about authors engaging each other with interesting coversation
+            and topics. We will have loads of fun.
+          </p>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <img src="/assets/img/icon1.png" class="img-fluid">
+
+          <h2 class="title">
+            Talk Shop
+          </h2>
+
+          <p>
+            In this meetup you will get to know the marketplaces better, because that’s why were all here for right? Learn a few tips and tricks from experienced authors from all over the country.
+          </p>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <img src="/assets/img/icon6.png" class="img-fluid">
+
+          <h2 class="title">
+            War Stories
+          </h2>
+
+          <p>
+            Gather round fellow authors! <br /> Hear the stories of success from your favorite authors and learn how they we able to tackle their problems and become successful.
+          </p>
+        </div>
+      </div>
+
+      <div class="row schedule">
+        <div class="col-12 mb-5">
+          <div class="header">
+            <div>Time</div>
+            <div>Stuff that will happen</div>
+          </div>
+
+          <div class="item">
+            <div>
+              <div>10am - 12pm</div>
+              <div>Introduction and presentations</div>
+            </div>
+
+            <button class="show-btn">
+              <div>
+                <div class="line"></div>
+                <div class="line"></div>
+              </div>
+            </button>
+
+            <div class="description" data-collapsed="true">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident.
+            </div>
+          </div>
+
+          <div class="item">
+            <div>
+              <div>12pm - 02pm</div>
+              <div>Sessions by honorable guests and Speakers</div>
+            </div>
+
+            <button class="show-btn">
+              <div>
+                <div class="line"></div>
+                <div class="line"></div>
+              </div>
+            </button>
+
+            <div class="description" data-collapsed="true">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
+            </div>
+          </div>
+
+          <div class="item">
+            <div>
+              <div>02pm - 03pm</div>
+              <div>Break and Mingle time with the authors</div>
+            </div>
+
+            <button class="show-btn">
+              <div>
+                <div class="line"></div>
+                <div class="line"></div>
+              </div>
+            </button>
+
+            <div class="description" data-collapsed="true">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+          </div>
+
+          <div class="item">
+            <div>
+              <div>03pm - 05pm</div>
+              <div>Portfolio Review, Rewards and Ending Presentation</div>
+            </div>
+
+            <button class="show-btn">
+              <div>
+                <div class="line"></div>
+                <div class="line"></div>
+              </div>
+            </button>
+
+            <div class="description" data-collapsed="true">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-9 text-center">
+          Please keep in mind that the timings may differ according to the flow of the event. The even is actually day long and we do plan to finish it within our set time but it doesn’t have to be, if we all agree to hangout for some time more, what harm could it do? :)
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer py-5">
+      <div class="container text-center">
+        <h5>Remember to share with friends</h5>
+
+        <div class="icons mt-3">
+          <a href="#" class="mx-2">
+            <img
+              src="./assets/img/facebook.png"
+              class="icon"
+              alt="facebook"
+            >
+          </a>
+          
+          <a href="#" class="mx-2">
+            <img
+              src="./assets/img/twitter.png"
+              class="icon"
+              alt="twitter"
+            >
+          </a>
+
+          <a href="#" class="mx-2">
+            <img
+              src="./assets/img/instagram.png"
+              class="icon"
+              alt="instagram"
+            >
+          </a>
+
+          <a href="#" class="mx-2">
+            <img
+              src="./assets/img/whatsapp.png"
+              class="icon"
+              alt="whatsapp"
+            >
+          </a>
+
+          <a href="#" class="mx-2">
+            <img
+              src="./assets/img/telegram.png"
+              class="icon"
+              alt="telegram"
+            >
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/assets/js/jquery-3.2.1.min.js"></script>
+    <script src="/assets/js/popper.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/script.js"></script>
+  </body>
+</html>

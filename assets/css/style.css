@@ -1,0 +1,468 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("/assets/fonts/Roboto-Regular.ttf"); }
+@font-face {
+  font-family: "RobotoBold";
+  src: url("/assets/fonts/Roboto-Bold.ttf"); }
+@font-face {
+  font-family: "RobotoSlab";
+  src: url("/assets/fonts/RobotoSlab-Thin.ttf"); }
+@font-face {
+  font-family: "RobotoLight";
+  src: url("/assets/fonts/Roboto-Light.ttf"); }
+@font-face {
+  font-family: "RobotoBlack";
+  src: url("/assets/fonts/Roboto-Black.ttf"); }
+@font-face {
+  font-family: "RobotoSlabBold";
+  src: url("/assets/fonts/RobotoSlab-Bold.ttf"); }
+body {
+  padding: 0;
+  margin: 0; }
+
+input:focus {
+  outline: 0; }
+
+.bold {
+  font-family: RobotoBold; }
+
+@media screen and (min-width: 300px) and (max-width: 991px) {
+  .sm-hide {
+    display: none !important; } }
+
+.validation-error {
+  box-shadow: 0 0 20px 3px red; }
+
+.logo {
+  width: 170px; }
+
+div.head {
+  background-color: #4a454b;
+  position: relative;
+  height: 770px;
+  width: 100%;
+  overflow-y: hidden;
+  background: url("/assets/img/snow-background.jpg");
+  background-repeat: repeat;
+  animation: snowFall 20s infinite linear; }
+  @media screen and (max-width: 768px) {
+    div.head {
+      height: 500px; } }
+  div.head:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    border-bottom: 7vw solid #FFFFFF;
+    border-left: 100vw solid transparent;
+    z-index: 2; }
+    @media screen and (min-width: 992px) {
+      div.head:after {
+        border-left: 98.7vw solid transparent; } }
+  div.head .images {
+    position: absolute;
+    bottom: -35px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: row-reverse;
+    -webkit-flex-direction: row-reverse; }
+    div.head .images img {
+      width: 165px;
+      height: 165px;
+      transform: rotate(15deg) translateY(20px); }
+      div.head .images img:last-child {
+        transform: rotate(-15deg) translateY(-2vw); }
+      div.head .images img:nth-child(4) {
+        transform: rotate(15deg) translateY(-2vw) translateX(-3.7vw); }
+      div.head .images img:nth-child(3) {
+        transform: translateY(-4vw) translateX(-5.7vw); }
+      div.head .images img:nth-child(2) {
+        transform: rotate(-15deg) translateY(-6.3vw) translateX(-5.5vw); }
+      div.head .images img:first-child {
+        transform: rotate(15deg) translateY(-2.5vw) translateX(-9.5vw); }
+
+.navbar {
+  padding-top: 30px;
+  margin-bottom: 120px; }
+  @media screen and (min-width: 768px) {
+    .navbar {
+      padding-right: 0; } }
+  @media screen and (max-width: 768px) {
+    .navbar {
+      padding-top: 10px;
+      margin-bottom: 40px; } }
+  .navbar button {
+    border: 1px solid #FFFFFF;
+    height: 50px;
+    width: 60px;
+    text-align: center;
+    position: relative; }
+    .navbar button:focus {
+      outline: 0; }
+    .navbar button .line {
+      width: 35px;
+      height: 0;
+      border-bottom: 2px solid white;
+      transition: all 0.3s ease;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%); }
+      .navbar button .line:first-child {
+        top: 15px; }
+      .navbar button .line:last-child {
+        bottom: 15px; }
+    .navbar button[aria-expanded="true"] > .line:first-child {
+      transform: rotate(40deg) translateY(-50%);
+      left: 20%;
+      top: 50%; }
+    .navbar button[aria-expanded="true"] > .line:last-child {
+      transform: rotate(-40deg) translateY(50%);
+      left: 20%;
+      bottom: 50%; }
+  @media screen and (max-width: 768px) {
+    .navbar .navbar-brand {
+      width: 150px; } }
+  .navbar .navbar-nav {
+    justify-content: space-between; }
+    @media screen and (max-width: 768px) {
+      .navbar .navbar-nav {
+        width: auto;
+        padding-top: 10px; } }
+    .navbar .navbar-nav .nav-item:nth-child(1) {
+      animation-delay: 0ms; }
+    .navbar .navbar-nav .nav-item:nth-child(2) {
+      animation-delay: 50ms; }
+    .navbar .navbar-nav .nav-item:nth-child(3) {
+      animation-delay: 100ms; }
+    .navbar .navbar-nav .nav-item:nth-child(4) {
+      animation-delay: 150ms; }
+    .navbar .navbar-nav .nav-item:nth-child(5) {
+      animation-delay: 200ms; }
+    .navbar .navbar-nav .nav-link {
+      font-size: 15px;
+      font-family: "Roboto";
+      color: #FFFFFF;
+      text-transform: uppercase; }
+      .navbar .navbar-nav .nav-link:hover {
+        color: #cac7c7; }
+      @media screen and (min-width: 768px) {
+        .navbar .navbar-nav .nav-link {
+          padding-right: 0;
+          padding-left: 2rem; } }
+    .navbar .navbar-nav .active > .nav-link {
+      color: #FFFFFF; }
+      .navbar .navbar-nav .active > .nav-link:hover {
+        color: #cac7c7; }
+
+.timer {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  height: 200px;
+  border: 3px solid #82b541;
+  border-radius: 30px;
+  font-family: "RobotoSlab";
+  text-align: center;
+  text-transform: uppercase;
+  color: white; }
+  @media screen and (max-width: 1382px) {
+    .timer {
+      height: 135px; } }
+  @media screen and (max-width: 767px) {
+    .timer {
+      height: 90px;
+      border: 2px solid #82b541;
+      width: 100%; } }
+  .timer .numbers {
+    font-size: 128px;
+    transform: translateY(-20px); }
+    @media screen and (max-width: 1382px) {
+      .timer .numbers {
+        font-size: 78px; } }
+    @media screen and (max-width: 767px) {
+      .timer .numbers {
+        font-size: 38px;
+        height: auto;
+        transform: translateY(0); }
+        .timer .numbers > div {
+          margin-bottom: 20px; } }
+    .timer .numbers span {
+      width: 100%; }
+    .timer .numbers > div {
+      display: inline-block;
+      position: relative; }
+    .timer .numbers > div:not(:first-child) {
+      min-width: 175px; }
+      @media screen and (max-width: 768px) {
+        .timer .numbers > div:not(:first-child) {
+          min-width: 45px; } }
+  .timer .text {
+    font-size: 27px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%); }
+    @media screen and (max-width: 1382px) {
+      .timer .text {
+        transform: translateX(-50%) translateY(20px); } }
+    @media screen and (max-width: 768px) {
+      .timer .text {
+        font-size: 15px; } }
+
+div.welcome {
+  width: 100%;
+  padding-top: 5%;
+  z-index: 3;
+  position: relative;
+  margin-top: -230px; }
+  @media screen and (min-width: 992px) {
+    div.welcome {
+      margin-top: 0; } }
+  div.welcome .row:first-child > div {
+    max-height: 450px; }
+    @media screen and (max-width: 768px) {
+      div.welcome .row:first-child > div {
+        max-height: none; } }
+  div.welcome .row:first-child > div:first-child {
+    order: 1;
+    margin-bottom: 0; }
+    @media screen and (max-width: 768px) {
+      div.welcome .row:first-child > div:first-child {
+        order: 2;
+        margin-bottom: 2rem; } }
+  div.welcome .row:first-child > div:last-child {
+    order: 2; }
+    @media screen and (max-width: 768px) {
+      div.welcome .row:first-child > div:last-child {
+        order: 1;
+        margin-bottom: 40px; } }
+  div.welcome h1 {
+    font-family: "RobotoBold";
+    color: #242424;
+    font-size: 50px;
+    padding-left: 20px;
+    text-align: left; }
+    @media screen and (max-width: 768px) {
+      div.welcome h1 {
+        padding-left: 0px;
+        text-align: center; } }
+  div.welcome p {
+    font-size: 14px;
+    color: #6d6d6d;
+    word-spacing: 0.1px; }
+  div.welcome .bold {
+    font-size: 13px; }
+  div.welcome form {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transform: translateY(-60%);
+    background-color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: 14px;
+    font-family: Roboto;
+    color: #6c6c6c;
+    border-radius: 18px; }
+    @media screen and (max-width: 768px) {
+      div.welcome form {
+        width: 100%;
+        height: 100%;
+        transform: translateY(0); } }
+    div.welcome form h1 {
+      font-size: 28px;
+      color: #252525;
+      padding-left: 0;
+      margin-bottom: 20px;
+      text-align: center; }
+      @media screen and (max-width: 768px) {
+        div.welcome form h1 {
+          font-size: 24px; } }
+    div.welcome form input {
+      width: 100%;
+      border: 1px solid #bebebe;
+      padding: 15px;
+      border-radius: 7px;
+      font-size: 18px;
+      color: #6c6c6c;
+      margin-bottom: 25px; }
+      div.welcome form input::placeholder {
+        color: #bebebe;
+        font-size: 18px; }
+      div.welcome form input:focus {
+        border-color: #90d23d; }
+    div.welcome form button {
+      font-family: RobotoBold;
+      font-size: 21px;
+      width: 100%;
+      color: white;
+      padding: 10px;
+      background-color: #90d23d;
+      border-radius: 7px;
+      margin-bottom: 10px; }
+      div.welcome form button:hover {
+        cursor: pointer;
+        background-color: #82b541; }
+      div.welcome form button:focus {
+        box-shadow: none;
+        border: 1px solid #407102; }
+  div.welcome .big-icons {
+    text-align: center; }
+    @media screen and (min-width: 768px) {
+      div.welcome .big-icons {
+        margin-bottom: 100px; } }
+    div.welcome .big-icons div:first-child > img {
+      margin-top: -12px; }
+    div.welcome .big-icons img {
+      width: 200px; }
+    div.welcome .big-icons .title {
+      font-size: 35px;
+      font-family: "RobotoBlack";
+      margin-top: 35px;
+      margin-bottom: 35px;
+      text-transform: capitalize; }
+      div.welcome .big-icons .title + p {
+        padding: 0 21px;
+        text-align: center; }
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      div.welcome .big-icons > div {
+        margin-bottom: 20px;
+        border-bottom: 1px solid rgba(190, 190, 190, 0.3); } }
+  div.welcome .schedule {
+    justify-content: center; }
+    div.welcome .schedule > div > div:nth-child(odd):not(:first-child),
+    div.welcome .schedule .line {
+      background-color: #4b4d4f; }
+      div.welcome .schedule > div > div:nth-child(odd):not(:first-child) button,
+      div.welcome .schedule .line button {
+        color: #4b4d4f; }
+    div.welcome .schedule > div > div:nth-child(even),
+    div.welcome .schedule .line {
+      background-color: #373737; }
+      div.welcome .schedule > div > div:nth-child(even) button,
+      div.welcome .schedule .line button {
+        color: #373737; }
+    div.welcome .schedule > div:last-child {
+      font-family: "RobotoLight";
+      font-size: 14px; }
+    div.welcome .schedule .header {
+      display: flex;
+      border-top-right-radius: 17px;
+      border-top-left-radius: 17px;
+      background-color: #90d23d;
+      font-family: RobotoBlack;
+      font-size: 30px;
+      color: white;
+      padding: 20px 0; }
+      @media screen and (max-width: 768px) {
+        div.welcome .schedule .header {
+          font-size: 20px; } }
+      div.welcome .schedule .header > div:first-child {
+        width: 22.815%;
+        text-align: center; }
+      div.welcome .schedule .header > div:last-child {
+        padding-left: 70px; }
+        @media screen and (max-width: 768px) {
+          div.welcome .schedule .header > div:last-child {
+            padding-left: 20px; } }
+    div.welcome .schedule .item {
+      font-size: 11px;
+      color: white;
+      position: relative; }
+      @media screen and (min-width: 768px) and (max-width: 991px) {
+        div.welcome .schedule .item {
+          font-size: 16px; } }
+      @media screen and (min-width: 992px) {
+        div.welcome .schedule .item {
+          font-size: 22px; } }
+      div.welcome .schedule .item:last-child {
+        border-bottom-right-radius: 17px;
+        border-bottom-left-radius: 17px; }
+      div.welcome .schedule .item .show-btn {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        right: 45px;
+        top: 20px;
+        border: none;
+        background-color: white;
+        border-radius: 50%;
+        cursor: pointer; }
+        @media screen and (max-width: 768px) {
+          div.welcome .schedule .item .show-btn {
+            right: 10px;
+            width: 20px;
+            height: 20px;
+            top: 25px; } }
+        div.welcome .schedule .item .show-btn:focus {
+          outline: 0;
+          box-shadow: 0 0 10px 4px rgba(255, 255, 255, 0.4); }
+        div.welcome .schedule .item .show-btn > div {
+          position: relative; }
+        div.welcome .schedule .item .show-btn .line {
+          width: 70%;
+          height: 4px;
+          transition: all 0.25s ease;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%); }
+          @media screen and (max-width: 768px) {
+            div.welcome .schedule .item .show-btn .line {
+              width: 100%;
+              height: 2px; } }
+        div.welcome .schedule .item .show-btn .line:first-child {
+          transform: translate(-50%, -50%) rotate(90deg); }
+        div.welcome .schedule .item .show-btn.opened .line {
+          transform: translate(-50%, -50%) rotate(0); }
+      div.welcome .schedule .item > .description {
+        height: 0;
+        overflow: hidden;
+        font-size: 12px;
+        padding: 0 20px;
+        transition: height 0.3s linear, padding 0.3s linear; }
+        @media screen and (min-width: 768px) {
+          div.welcome .schedule .item > .description {
+            font-size: 14px; } }
+        @media screen and (min-width: 992px) {
+          div.welcome .schedule .item > .description {
+            font-size: 16px; } }
+      div.welcome .schedule .item > div:first-child {
+        display: flex;
+        padding: 20px 0; }
+        div.welcome .schedule .item > div:first-child > div:first-child {
+          width: 22.815%;
+          text-align: center; }
+          @media screen and (max-width: 768px) {
+            div.welcome .schedule .item > div:first-child > div:first-child {
+              width: 26%; } }
+        div.welcome .schedule .item > div:first-child > div:nth-child(2) {
+          padding-left: 70px; }
+          @media screen and (max-width: 768px) {
+            div.welcome .schedule .item > div:first-child > div:nth-child(2) {
+              padding-left: 20px;
+              width: 60%; } }
+
+.footer {
+  background-color: #373737;
+  margin-top: 3rem;
+  color: #FFFFFF; }
+  .footer .icons {
+    display: flex;
+    justify-content: center; }
+    .footer .icons .icon {
+      width: 35px;
+      height: auto; }
+
+@keyframes snowFall {
+  0% {
+    background-position: 0px 0px; }
+  100% {
+    background-position: 0px 480px; } }
+
+/*# sourceMappingURL=style.css.map */
