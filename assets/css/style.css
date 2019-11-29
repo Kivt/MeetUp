@@ -36,6 +36,11 @@ input:focus {
 .logo {
   width: 170px; }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
 div.head {
   background-color: #4a454b;
   position: relative;
@@ -45,7 +50,7 @@ div.head {
   background: url("../img/snow-background.jpg");
   background-repeat: repeat;
   animation: snowFall 20s infinite linear; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 991px) {
     div.head {
       height: 500px; } }
   div.head:after {
@@ -92,7 +97,7 @@ div.head {
   @media screen and (min-width: 768px) {
     .navbar {
       padding-right: 0; } }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 992px) {
     .navbar {
       padding-top: 10px;
       margin-bottom: 40px; } }
@@ -170,7 +175,7 @@ div.head {
   text-align: center;
   text-transform: uppercase;
   color: white; }
-  @media screen and (max-width: 1382px) {
+  @media screen and (max-width: 1366px) {
     .timer {
       height: 135px; } }
   @media screen and (max-width: 767px) {
@@ -181,7 +186,10 @@ div.head {
   .timer .numbers {
     font-size: 128px;
     transform: translateY(-20px); }
-    @media screen and (max-width: 1382px) {
+    @media screen and (min-width: 768px) and (max-width: 1366px) {
+      .timer .numbers {
+        transform: translateY(-20px); } }
+    @media screen and (max-width: 1366px) {
       .timer .numbers {
         font-size: 78px; } }
     @media screen and (max-width: 767px) {
@@ -198,7 +206,7 @@ div.head {
       position: relative; }
     .timer .numbers > div:not(:first-child) {
       min-width: 175px; }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 991px) {
         .timer .numbers > div:not(:first-child) {
           min-width: 45px; } }
   .timer .text {
@@ -209,7 +217,7 @@ div.head {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%); }
-    @media screen and (max-width: 1382px) {
+    @media screen and (max-width: 1366px) {
       .timer .text {
         transform: translateX(-50%) translateY(20px); } }
     @media screen and (max-width: 768px) {
@@ -221,7 +229,7 @@ div.welcome {
   padding-top: 5%;
   z-index: 3;
   position: relative;
-  margin-top: -230px; }
+  margin-top: -240px; }
   @media screen and (min-width: 992px) {
     div.welcome {
       margin-top: 0; } }
@@ -233,13 +241,13 @@ div.welcome {
   div.welcome .row:first-child > div:first-child {
     order: 1;
     margin-bottom: 0; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 991px) {
       div.welcome .row:first-child > div:first-child {
         order: 2;
         margin-bottom: 2rem; } }
   div.welcome .row:first-child > div:last-child {
     order: 2; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 991px) {
       div.welcome .row:first-child > div:last-child {
         order: 1;
         margin-bottom: 40px; } }
@@ -261,7 +269,7 @@ div.welcome {
     font-size: 13px; }
   div.welcome form {
     border: 1px solid rgba(0, 0, 0, 0.1);
-    transform: translateY(-60%);
+    transform: translateY(-50%);
     background-color: white;
     text-align: center;
     padding: 30px;
@@ -269,11 +277,14 @@ div.welcome {
     font-family: Roboto;
     color: #6c6c6c;
     border-radius: 18px; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 991px) {
       div.welcome form {
         width: 100%;
         height: 100%;
         transform: translateY(0); } }
+    @media screen and (min-width: 1900px) {
+      div.welcome form {
+        transform: translateY(-60%); } }
     div.welcome form h1 {
       font-size: 28px;
       color: #252525;
@@ -458,6 +469,9 @@ div.welcome {
     .footer .icons .icon {
       width: 35px;
       height: auto; }
+      @media screen and (min-width: 1366px) {
+        .footer .icons .icon {
+          width: 45px; } }
 
 @keyframes snowFall {
   0% {
